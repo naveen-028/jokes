@@ -19,7 +19,7 @@ class HomeScreenController extends GetxController {
      jokesList.add(HomeScreenModel.fromJson(element)) ;
     }
     fetchJokes();
-    timer = Timer.periodic(const Duration(seconds: 10), (Timer t) => fetchJokes());
+    timer = Timer.periodic(const Duration(seconds: 60), (Timer t) => fetchJokes());
 
     super.onInit();
   }
