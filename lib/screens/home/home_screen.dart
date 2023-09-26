@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled/screens/home/home_screen_controller.dart';
 import 'package:untitled/screens/home/widgets/jokes_card_widget.dart';
+import 'package:untitled/screens/utils/string_constants.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,7 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("joeks"),
+        title: Text(StringConstants().jokes),
       ),
       body: Obx(
         () => ListView.builder(
